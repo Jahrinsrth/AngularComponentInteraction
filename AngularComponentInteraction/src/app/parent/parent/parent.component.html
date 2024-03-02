@@ -1,0 +1,11 @@
+<p>parent component</p>
+
+<button (click)="sendMsgToChild()"> send msgToChild</button>
+
+<h3> Message from child to parent :::: {{msgFromChild}}</h3>
+
+<app-child [parentToChildmsg]="msgToChild" (childOutMsgForParent)="getChildMsg($event)"> </app-child>
+
+<app-notification> </app-notification>
+
+<h2> message form notification subject {{subjectMsg}}</h2>
